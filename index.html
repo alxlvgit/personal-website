@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oleksandr Levchuk</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <a class="resume" href="resources/other/resume.pdf" target="_blank">Resume</a>
+        <a class="github" href="https://github.com/alxlvgit"></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/oleksandrlevchuk/"></a>
+    </header>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <div class="intro">
+            <h1>Hello, my name is</h1>
+            <h1>Oleksandr.</h1>
+            <hr>
+            <h1>Full-Stack Web Development Student</h1>
+        </div>
+        <div class="profile-image">
+            <img src="resources/images/profile-photo.png" alt="profile image">
+        </div>
+        <div class="about-details">
+            <p>I am a Full-Stack Web Development Student passionate about building great web solutions for various
+                projects.
+            </p>
+            <p>
+                I discovered a high interest in programming later in life after spending some time in the
+                Industrial Automation field, and now fully dedicated to learning the new industry. To turn a passion
+                into a fulfilling career, I decided to enroll in the Full-Stack Web Development program at BCIT.
+            </p>
+            <a class="button-coloured" href="#contact">Get in touch</a>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+        <div class="projects-container">
+            <div class="section-heading">
+                <h1>PROJECTS</h1>
+                <hr>
+            </div>
+            <div class="filter-nav">
+                <div class="flex-row">
+                    <button class="filter-button" data-id="all" id="all">ALL</button>
+                    <button class="filter-button" data-id="back-end" id="back-end">BACK-END WEB</button>
+                    <button class="filter-button" data-id="front-end" id="front-end">FRONT-END
+                        WEB</button>
+                    <button class="filter-button" data-id="android" id="android">ANDROID-JAVA</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper" id="swiper">
+                <div class="swiper-wrapper" id="swiper-wrapper"> </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev swiper-nav"></div>
+                <div class="swiper-button-next swiper-nav"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <div class="vertical-container">
+            <div class="section-heading">
+                <h1>CONTACT ME</h1>
+                <hr>
+            </div>
+            <form method="post" data-netlify="true" class="contact-form" name="contact-form">
+                <div class="name-container">
+                    <div class="input-style">
+                        <input placeholder="First name" type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input-style">
+                        <input placeholder="Last name" type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+                <div class="input-style">
+                    <input placeholder="Email" type="email" name="email" required>
+                </div>
+                <div class="input-style">
+                    <textarea name="message" type="text" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn button-coloured">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+            <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+        </svg>
+        <p>© 2023 Oleksandr Levchuk</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="data.js"></script>
+    <script defer src=" main.js"></script>
+</body>
+
+</html>
