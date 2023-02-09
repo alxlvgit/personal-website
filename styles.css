@@ -79,8 +79,9 @@ hr {
 }
 
 .resume:hover,
-.github:hover,
-.linkedin:hover {
+.header.github:hover,
+.linkedin:hover,
+.github-swiper:hover {
     opacity: 0.7;
 }
 
@@ -298,6 +299,7 @@ hr {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 
 .github-swiper .github {

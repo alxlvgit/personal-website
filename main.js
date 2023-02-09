@@ -45,10 +45,10 @@ const addSlides = (dataSetId) => {
     swiperDataSet.forEach((slideData, index) => {
         swiper.addSlide(index, `<div class="swiper-slide">
         <img src = "${slideData.path}">
-       <div class="github-swiper">
+       <a class="github-swiper" href="${slideData.gitHubLink}">
        <h2 class="project-title">${slideData.projectTitle}</h2>
-       <a class="github" href="${slideData.gitHubLink}"></a>
-       </div>
+       <span class="github"></span>
+       </a>
         </div>`);
     });
     swiper.slideTo(1, 0, false);
