@@ -2,6 +2,7 @@
 const buttons = document.querySelectorAll('button.filter-button');
 const defaultBtn = document.getElementById("all");
 const swiperNavigation = document.querySelectorAll(".swiper-nav");
+const contactBtn = document.querySelector(".contact-btn");
 
 // Initialize swiper
 const swiper = new Swiper('.swiper', {
@@ -17,7 +18,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Set the default filter button active on window load
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
     defaultBtn.classList.add("active");
     defaultBtn.click();
 });
@@ -63,3 +64,11 @@ buttons.forEach(function (filterBtn) {
         addSlides(dataSetId);
     });
 });
+
+// Scroll down to contact section on button click
+contactBtn.addEventListener("click", () => {
+    const contactSection = document.getElementById("contact");
+    contactSection.scrollIntoView({
+        behavior: "smooth"
+    })
+})
