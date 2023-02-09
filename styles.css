@@ -584,10 +584,10 @@ footer p {
         }
 
         .filter-button {
-            padding: 0.6rem 0.9rem;
+            padding: 0.4rem 0.2rem;
             font-size: 0.6rem;
-            height: 3rem;
-            width: 25%;
+            height: 3.2rem;
+            width: 23%;
             display: flex;
             align-items: center;
             justify-content: center;
