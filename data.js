@@ -22,12 +22,12 @@ const swiperData = {
     {
         "projectTitle": "Personal Website",
         "path": "resources/images/personal_website.png",
-        "gitHubLink": ""
+        "gitHubLink": "https://github.com/alxlvgit/PersonalWebsite"
     }],
     "front-end": [{
         "projectTitle": "Personal Website",
         "path": "resources/images/personal_website.png",
-        "gitHubLink": ""
+        "gitHubLink": "https://github.com/alxlvgit/PersonalWebsite"
     }],
     "back-end": [{
         "projectTitle": "Real-time photo feed",
