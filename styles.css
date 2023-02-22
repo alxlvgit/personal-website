@@ -78,13 +78,6 @@ hr {
     border-radius: 3.75rem;
 }
 
-.resume:hover,
-.header.github:hover,
-.linkedin:hover,
-.github-swiper:hover {
-    opacity: 0.7;
-}
-
 .github,
 .linkedin {
     width: 1.7rem;
@@ -101,6 +94,13 @@ hr {
 .linkedin {
     background-image: url("resources/images/linkedin-icon.png");
     margin-left: 1.25rem;
+}
+
+.resume:hover,
+.header .github:hover,
+.linkedin:hover,
+.github-swiper:hover {
+    opacity: 0.7;
 }
 
 /* End header */
