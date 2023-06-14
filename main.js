@@ -51,7 +51,11 @@ const addProjectsTiles = (dataSetId) => {
   data[`${dataSetId}`].map((project) => {
     const projectTile = document.createElement("div");
     projectTile.classList.add("project-tile");
-    projectTile.style.backgroundImage = `url(${project.thumbnail})`;
+    const tileImage = document.createElement("img");
+    tileImage.classList.add("tile-image");
+    tileImage.src = project.thumbnail;
+    tileImage.alt = "Project thumbnail";
+    projectTile.appendChild(tileImage);
     projectTile.appendChild(createProjectOverlayOnHover(project));
     projectsContainer.appendChild(projectTile);
   });

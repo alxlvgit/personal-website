@@ -268,15 +268,17 @@ hr {
 }
 
 .project-tile {
-    width: 21.875rem;
-    height: 17.5rem;
     position: relative;
     overflow: hidden;
-    margin: 0.4rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 0.6rem;
+    margin: 0.4rem;
+}
+
+.tile-image {
+    display: block;
+    width: 100%;
+    max-width: 21.875rem;
+    max-height: 17.5rem;
 }
 
 .overlay {
@@ -632,6 +634,10 @@ footer p {
         background: white;
     }
 
+    .submit-btn {
+        align-self: center;
+    }
+
     input,
     textarea,
     ::placeholder {
@@ -695,12 +701,15 @@ footer p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
-        width: 94%;
+        width: 92%;
         margin: 1rem auto 0 auto;
     }
 
+    .tile-top {
+        margin-top: 2rem;
+    }
+
     .project-tile {
-        width: 100%;
         margin: 0 auto;
     }
 
@@ -718,14 +727,6 @@ footer p {
     .github,
     .linkedin {
         margin-left: 1rem;
-    }
-
-    .intro {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 1.5rem;
     }
 
     h1,
@@ -746,25 +747,20 @@ footer p {
     }
 
     p {
-        text-align: start;
+        text-align: left;
     }
 
     .profile-image {
-        float: left;
-        margin: 0 auto 1.5rem auto;
-        max-width: 90%;
+        max-width: 40%;
     }
 
     .profile-image img {
-        width: 70%;
+        border-radius: 4rem;
+        margin-bottom: 0.5rem;
     }
 
     .about-details {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: center;
+        width: 100%;
         margin-top: 1rem;
     }
 
@@ -778,8 +774,25 @@ footer p {
     }
 
     .projects {
-        grid-gap: 0.7rem;
         width: 95%;
+        grid-gap: 0.8rem;
+    }
+
+    .tile-top {
+        margin-top: 1rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .project-tech {
+        font-size: 0.65rem;
+        width: 95%;
+    }
+
+    .info-button {
+        font-size: 0.7rem;
     }
 
     .filter-button {
@@ -821,8 +834,39 @@ footer p {
 }
 
 @media screen and (max-width: 400px) {
+    .intro {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .intro h1:last-of-type {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-top: 0.3rem;
+    }
+
+    .intro hr {
+        display: none;
+    }
+
+    .profile-image {
+        max-width: 38%;
+        float: left;
+        margin-right: 1rem;
+    }
+
     .profile-image img {
-        border-radius: 4.25rem;
+        border-radius: 100%;
+        margin: 0;
+        border: #FFFFFF 0.1rem solid;
+        outline: #FAA916 0.1rem solid;
+    }
+
+    .about-details {
+        width: 100%;
+        margin: 0;
     }
 
     .about-details p {
@@ -830,8 +874,13 @@ footer p {
     }
 
     .projects {
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.9rem;
+        grid-gap: 1rem;
+    }
+
+    .tile-top {
+        margin-top: 2rem;
     }
 
     .filter-button {
@@ -840,6 +889,10 @@ footer p {
 
     .button-coloured {
         padding: 0.9rem 1.8rem;
+    }
+
+    .about-details>.button-coloured {
+        margin: 1rem auto 0 auto;
     }
 
     .project-title-modal {
@@ -854,12 +907,13 @@ footer p {
         font-size: 0.8rem;
     }
 
-    .project-tile {
-        background-size: cover;
-        width: 92vw;
-        border-radius: 0.5rem;
-        height: 300px;
-        margin: 0 auto;
+    .project-tech {
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .info-button {
+        font-size: 0.8rem;
     }
 
     .title {
