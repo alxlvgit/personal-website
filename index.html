@@ -16,6 +16,12 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
+
+    <!-- JS Links -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4238f643fe.js" crossorigin="anonymous"></script>
+    <script defer src="data.js"></script>
+    <script defer src=" main.js"></script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
             <h1>Hello, my name is</h1>
             <h1>Oleksandr.</h1>
             <hr>
-            <h1>Full-Stack Web Development Student</h1>
+            <h1>Full-Stack Web Developer</h1>
         </div>
         <div class="profile-image">
             <img src="resources/images/profile-photo.png" alt="profile image">
@@ -67,20 +73,15 @@
             <div class="filter-nav">
                 <div class="flex-row">
                     <button class="filter-button" data-id="all" id="all">ALL</button>
-                    <button class="filter-button" data-id="back-end" id="back-end">BACK-END WEB</button>
-                    <button class="filter-button" data-id="front-end" id="front-end">FRONT-END
+                    <button class="filter-button" data-id="backend" id="backend">BACK-END WEB</button>
+                    <button class="filter-button" data-id="frontend" id="frontend">FRONT-END
                         WEB</button>
                     <button class="filter-button" data-id="android" id="android">ANDROID-JAVA</button>
                 </div>
             </div>
         </div>
-        <div class="swiper-container">
-            <div class="swiper" id="swiper">
-                <div class="swiper-wrapper" id="swiper-wrapper"> </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev swiper-nav"></div>
-                <div class="swiper-button-next swiper-nav"></div>
-            </div>
+        <div class="projects">
+
         </div>
     </section>
 
@@ -121,9 +122,6 @@
         </svg>
         <p>© 2023 Oleksandr Levchuk</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="data.js"></script>
-    <script defer src=" main.js"></script>
 </body>
 
 </html>
