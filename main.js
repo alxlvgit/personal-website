@@ -29,21 +29,6 @@ const createInfoBtn = (project) => {
   return infoBtn;
 };
 
-// Create overlay handler
-const overlayHandler = (event, overlay) => {
-  if (event.currentTarget.classList.contains("overlay-active")) {
-    event.currentTarget.classList.remove("overlay-active");
-    return;
-  }
-  const previouslyActivatedOverlay = document.querySelector(".overlay-active");
-  previouslyActivatedOverlay
-    ? previouslyActivatedOverlay.classList.remove("overlay-active")
-    : null;
-  event.preventDefault();
-  event.stopPropagation();
-  overlay.classList.add("overlay-active");
-};
-
 // Create overlay for project tiles
 const createProjectOverlayOnHover = (project) => {
   const overlay = document.createElement("div");
@@ -57,18 +42,6 @@ const createProjectOverlayOnHover = (project) => {
   tileTop.appendChild(createTech(project.tech));
   overlay.appendChild(tileTop);
   overlay.appendChild(createInfoBtn(project));
-  overlay.addEventListener("touchstart", (event) => {
-    event.target.classList.contains("info-button")
-      ? null
-      : event.preventDefault();
-    overlayHandler(event, overlay);
-  });
-  overlay.addEventListener("mouseover", (event) => {
-    overlayHandler(event, overlay);
-  });
-  overlay.addEventListener("mouseout", () => {
-    overlay.classList.remove("overlay-active");
-  });
   return overlay;
 };
 
