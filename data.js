@@ -1,13 +1,27 @@
 const data = {
   all: [
     {
+      projectTitle: "Find Event",
+      thumbnail: "resources/images/find_event_thumbnail.png",
+      gitHubLink: "https://github.com/alxlvgit/find-event-next",
+      hostedLink: "https://find-event-next.vercel.app/",
+      tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
+      description:
+        "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
+      images: [
+        "resources/images/find_event_1.png",
+        "resources/images/find_event_2.png",
+        "resources/images/find_event_3.png",
+      ],
+    },
+    {
       projectTitle: "TravelMeet",
       thumbnail: "resources/images/travelmeet_thumbnail.png",
       gitHubLink: "https://github.com/alxlvgit/TravelMeet",
       hostedLink: "https://web-production-fa4f.up.railway.app/",
-      tech: "JavaScript, Node.js, Express, Socket.io, MySQL, HTML, Tailwind CSS, EJS, Redis, AWS S3, Passport.js",
+      tech: "JavaScript, Node.js, Express, Socket.io, Redis, AWS S3, MySQL, Passport.js, HTML, Tailwind CSS, EJS",
       description:
-        "TravelMeet is a web app that helps users connect with new people and discover events in specific locations. It features a dynamic map that provides real-time shared location information of users and events in the selected area. Users can view profiles, follow others, and create groups to plan event visits together.",
+        "TravelMeet is a dynamic full-stack web application that connects users in specific locations. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
       images: [
         "resources/images/travelmeet_1.png",
         "resources/images/travelmeet_2.png",
@@ -66,6 +80,20 @@ const data = {
     },
   ],
   frontend: [
+    {
+      projectTitle: "Find Event",
+      thumbnail: "resources/images/find_event_thumbnail.png",
+      gitHubLink: "https://github.com/alxlvgit/find-event-next",
+      hostedLink: "https://find-event-next.vercel.app/",
+      tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
+      description:
+        "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
+      images: [
+        "resources/images/find_event_1.png",
+        "resources/images/find_event_2.png",
+        "resources/images/find_event_3.png",
+      ],
+    },
     {
       projectTitle: "Personal Website",
       thumbnail: "resources/images/personal_portfolio_thumbnail.png",
