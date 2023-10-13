@@ -5,7 +5,7 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
     hostedLink: "https://main--thriving-dusk-1ad16a.netlify.app/",
     projectType: ["backend", "frontend"],
-    tech: "TypeScript, NestJS, React, Socket.io, PostgreSQL, Tailwind CSS",
+    tech: "TypeScript, NestJS, React, Redux, Socket.io, PostgreSQL, Tailwind CSS",
     description:
       "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built by using React, NestJS, TypeScript, Socket.IO, Supabase, PostgreSQL, and Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
     images: [
