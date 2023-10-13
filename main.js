@@ -48,16 +48,19 @@ const createProjectOverlayOnHover = (project) => {
 // Render project tiles in projects container
 const addProjectsTiles = (dataSetId) => {
   projectsContainer.innerHTML = "";
-  data[`${dataSetId}`].map((project) => {
-    const projectTile = document.createElement("div");
-    projectTile.classList.add("project-tile");
-    const tileImage = document.createElement("img");
-    tileImage.classList.add("tile-image");
-    tileImage.src = project.thumbnail;
-    tileImage.alt = "Project thumbnail";
-    projectTile.appendChild(tileImage);
-    projectTile.appendChild(createProjectOverlayOnHover(project));
-    projectsContainer.appendChild(projectTile);
+  data.map((project) => {
+    const { projectType } = project;
+    if (projectType.includes(dataSetId) || dataSetId === "all") {
+      const projectTile = document.createElement("div");
+      projectTile.classList.add("project-tile");
+      const tileImage = document.createElement("img");
+      tileImage.classList.add("tile-image");
+      tileImage.src = project.thumbnail;
+      tileImage.alt = "Project thumbnail";
+      projectTile.appendChild(tileImage);
+      projectTile.appendChild(createProjectOverlayOnHover(project));
+      projectsContainer.appendChild(projectTile);
+    }
   });
 };
 
