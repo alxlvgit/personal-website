@@ -294,6 +294,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0.6rem;
 }
 
 .overlay:hover {
@@ -722,7 +723,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
     .github,
     .linkedin {
@@ -831,14 +832,34 @@ footer p {
         font-size: 0.7rem;
         padding: 0.5rem;
     }
-}
+} */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+
+    .github,
+    .linkedin {
+        margin-left: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
     .intro {
         float: none;
         width: 100%;
         text-align: center;
         margin-bottom: 1.6rem;
+    }
+
+    .section-heading {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+
+    .section-heading h1 {
+        font-size: 2rem;
     }
 
     .intro h1:last-of-type {
@@ -847,8 +868,21 @@ footer p {
         margin-top: 0.3rem;
     }
 
+    .section-heading hr {
+        width: 3rem;
+        height: 0.125rem;
+    }
+
     .intro hr {
         display: none;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .title-container {
+        justify-content: space-between;
     }
 
     .profile-image {
@@ -883,8 +917,13 @@ footer p {
         margin-top: 2rem;
     }
 
+    .flex-row {
+        width: 100%;
+        height: fit-content;
+    }
+
     .filter-button {
-        font-size: 0.7rem;
+        display: none;
     }
 
     .button-coloured {
@@ -903,8 +942,16 @@ footer p {
         flex-wrap: wrap;
     }
 
+    .projects {
+        grid-gap: 1.5rem;
+    }
+
     .project-description {
         font-size: 0.8rem;
+    }
+
+    .project-tile {
+        border: white 0.1rem solid;
     }
 
     .project-tech {
@@ -920,6 +967,10 @@ footer p {
         font-size: 1.7rem;
     }
 
+    .swiper-navigation {
+        display: none;
+    }
+
     .swiper-pagination-bullet {
         width: 0.35rem;
         height: 0.35rem;
@@ -931,5 +982,18 @@ footer p {
 
     .github-link-modal {
         margin: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer {
+        height: 8rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+        padding: 0.5rem;
     }
 }

@@ -1,16 +1,18 @@
 const data = [
   {
-    projectTitle: "Live Chat App",
-    thumbnail: "resources/images/chat_nest_react_thumbnail.png",
-    gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
-    hostedLink: "https://main--thriving-dusk-1ad16a.netlify.app/",
+    projectTitle: "Cocoon",
+    thumbnail: "resources/images/cocoon_thumbnail.png",
+    gitHubLink: "https://github.com/alxlvgit/cocoon",
+    hostedLink: "https://www.cocoon.quest/",
     projectType: ["backend", "frontend"],
-    tech: "TypeScript, NestJS, React, Redux, Socket.io, PostgreSQL, Tailwind CSS",
+    tech: "TypeScript, Next.js, Tailwind CSS, Redux, AWS Lambda, Amazon Textract, LangChain, Open AI API, Udemy Affiliate API...",
     description:
-      "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built by using React, NestJS, TypeScript, Socket.IO, Supabase, PostgreSQL, and Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
+      "Cocoon is an AI-driven app designed to help you switch careers seamlessly. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
     images: [
-      "resources/images/chat_nest_react_1.png",
-      "resources/images/chat_nest_react_2.png",
+      "resources/images/cocoon_1.png",
+      "resources/images/cocoon_2.png",
+      "resources/images/cocoon_3.png",
+      "resources/images/cocoon_4.png",
     ],
   },
   {
@@ -29,19 +31,17 @@ const data = [
     ],
   },
   {
-    projectTitle: "TravelMeet",
-    thumbnail: "resources/images/travelmeet_thumbnail.png",
-    gitHubLink: "https://github.com/alxlvgit/TravelMeet",
-    hostedLink: "https://byrfaqijzp.us17.qoddiapp.com/",
-    projectType: ["frontend", "backend"],
-    tech: "JavaScript, Node.js, Express, Socket.io, Redis, AWS S3, MySQL, Passport.js, HTML, Tailwind CSS, EJS",
+    projectTitle: "Live Chat App",
+    thumbnail: "resources/images/chat_nest_react_thumbnail.png",
+    gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
+    hostedLink: "https://main--thriving-dusk-1ad16a.netlify.app/",
+    projectType: ["backend", "frontend"],
+    tech: "TypeScript, NestJS, React, Redux, RTK Query, Socket.IO, Formik, PostgreSQL, Tailwind CSS",
     description:
-      "TravelMeet is a dynamic full-stack web application that connects users in specific locations. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
+      "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built by using React, NestJS, Redux, RTK Query, Socket.IO, Formik, Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
     images: [
-      "resources/images/travelmeet_1.png",
-      "resources/images/travelmeet_2.png",
-      "resources/images/travelmeet_3.png",
-      "resources/images/travelmeet_4.png",
+      "resources/images/chat_nest_react_1.png",
+      "resources/images/chat_nest_react_2.png",
     ],
   },
   {
@@ -54,6 +54,22 @@ const data = [
     description:
       "Personal Website is a website that showcases my projects and skills. The website is built using HTML, CSS, and JavaScript.",
     images: ["resources/images/personal_website.png"],
+  },
+  {
+    projectTitle: "TravelMeet",
+    thumbnail: "resources/images/travelmeet_thumbnail.png",
+    gitHubLink: "https://github.com/alxlvgit/TravelMeet",
+    hostedLink: "https://byrfaqijzp.us17.qoddiapp.com/",
+    projectType: ["frontend", "backend"],
+    tech: "JavaScript, Node.js, Express, Socket.IO, Redis, AWS S3, MySQL, Passport.js, HTML, Tailwind CSS, EJS",
+    description:
+      "TravelMeet is a dynamic full-stack web application that connects users in specific locations. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
+    images: [
+      "resources/images/travelmeet_1.png",
+      "resources/images/travelmeet_2.png",
+      "resources/images/travelmeet_3.png",
+      "resources/images/travelmeet_4.png",
+    ],
   },
   {
     projectTitle: "Grayscale filter",
