@@ -5,7 +5,7 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/cocoon",
     hostedLink: "https://www.cocoon.quest/",
     projectType: ["js-frameworks"],
-    tech: "TypeScript, Next.js, Tailwind CSS, Redux, AWS Lambda, Amazon Textract, LangChain, Open AI API, Udemy Affiliate API...",
+    tech: "TypeScript, Next.js, Tailwind CSS, Redux, AWS Lambda, Amazon Textract, LangChain, OpenAI API, Udemy Affiliate API...",
     description:
       "Cocoon is an AI-driven app designed to help you switch careers seamlessly. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
     images: [
@@ -34,7 +34,7 @@ const data = [
     projectTitle: "Live Chat App",
     thumbnail: "resources/images/chat_nest_react_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
-    hostedLink: "https://main--thriving-dusk-1ad16a.netlify.app/",
+    hostedLink: "https://chat-nest-react.vercel.app/",
     projectType: ["node-frameworks", "js-frameworks"],
     tech: "TypeScript, NestJS, React, Redux, RTK Query, Socket.IO, Formik, PostgreSQL, Tailwind CSS",
     description:
