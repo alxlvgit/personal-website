@@ -38,6 +38,10 @@ button {
     text-decoration: none;
     display: block;
     transition: all 0.3s ease-in-out;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 h1 {
@@ -570,10 +574,6 @@ textarea {
 }
 
 .submit-btn {
-    border: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
     padding: 0.8rem 2rem;
     align-self: flex-start;
     margin-top: 2rem;
