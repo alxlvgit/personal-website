@@ -4,7 +4,7 @@ const data = [
     thumbnail: "resources/images/cocoon_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/cocoon",
     hostedLink: "https://www.cocoon.quest/",
-    projectType: ["backend", "frontend"],
+    projectType: ["js-frameworks"],
     tech: "TypeScript, Next.js, Tailwind CSS, Redux, AWS Lambda, Amazon Textract, LangChain, Open AI API, Udemy Affiliate API...",
     description:
       "Cocoon is an AI-driven app designed to help you switch careers seamlessly. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
@@ -20,7 +20,7 @@ const data = [
     thumbnail: "resources/images/find_event_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/find-event-next",
     hostedLink: "https://find-event-next.vercel.app/",
-    projectType: ["frontend", "backend"],
+    projectType: ["js-frameworks"],
     tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
     description:
       "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
@@ -35,7 +35,7 @@ const data = [
     thumbnail: "resources/images/chat_nest_react_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
     hostedLink: "https://main--thriving-dusk-1ad16a.netlify.app/",
-    projectType: ["backend", "frontend"],
+    projectType: ["node-frameworks", "js-frameworks"],
     tech: "TypeScript, NestJS, React, Redux, RTK Query, Socket.IO, Formik, PostgreSQL, Tailwind CSS",
     description:
       "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built by using React, NestJS, Redux, RTK Query, Socket.IO, Formik, Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
@@ -49,7 +49,7 @@ const data = [
     thumbnail: "resources/images/personal_portfolio_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/PersonalWebsite",
     hostedLink: "https://levchuk.dev/",
-    projectType: ["frontend"],
+    projectType: ["js"],
     tech: "HTML, CSS, JavaScript",
     description:
       "Personal Website is a website that showcases my projects and skills. The website is built using HTML, CSS, and JavaScript.",
@@ -60,7 +60,7 @@ const data = [
     thumbnail: "resources/images/travelmeet_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/TravelMeet",
     hostedLink: "https://byrfaqijzp.us17.qoddiapp.com/",
-    projectType: ["frontend", "backend"],
+    projectType: ["js", "node-frameworks"],
     tech: "JavaScript, Node.js, Express, Socket.IO, Redis, AWS S3, MySQL, Passport.js, HTML, Tailwind CSS, EJS",
     description:
       "TravelMeet is a dynamic full-stack web application that connects users in specific locations. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
@@ -70,16 +70,6 @@ const data = [
       "resources/images/travelmeet_3.png",
       "resources/images/travelmeet_4.png",
     ],
-  },
-  {
-    projectTitle: "Grayscale filter",
-    thumbnail: "resources/images/grayscale_project_thumbnail.png",
-    gitHubLink: "https://github.com/alxlvgit/grayscalePhoto",
-    projectType: ["backend"],
-    tech: "Node.js",
-    description:
-      "Grayscale filter is a web application that allows users to unzip the given file with photos, and apply a grayscale filter to the images. The application is built using Node.js.",
-    images: ["resources/images/grayscale_project.png"],
   },
   {
     projectTitle: "BluetoothTimer",
