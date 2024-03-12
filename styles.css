@@ -137,7 +137,7 @@ hr {
 }
 
 .about-details {
-    width: 65%;
+    max-width: 44rem;
     margin-top: 1.25rem;
 }
 
