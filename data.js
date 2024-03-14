@@ -1,5 +1,20 @@
 const data = [
   {
+    projectTitle: "Find Event",
+    thumbnail: "resources/images/find_event_thumbnail.png",
+    gitHubLink: "https://github.com/alxlvgit/find-event-next",
+    hostedLink: "https://find-event-next.vercel.app/",
+    projectType: ["js-frameworks"],
+    tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
+    description:
+      "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
+    images: [
+      "resources/images/find_event_1.png",
+      "resources/images/find_event_2.png",
+      "resources/images/find_event_3.png",
+    ],
+  },
+  {
     projectTitle: "Cocoon",
     thumbnail: "resources/images/cocoon_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/cocoon",
@@ -16,21 +31,6 @@ const data = [
     ],
   },
   {
-    projectTitle: "Find Event",
-    thumbnail: "resources/images/find_event_thumbnail.png",
-    gitHubLink: "https://github.com/alxlvgit/find-event-next",
-    hostedLink: "https://find-event-next.vercel.app/",
-    projectType: ["js-frameworks"],
-    tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
-    description:
-      "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
-    images: [
-      "resources/images/find_event_1.png",
-      "resources/images/find_event_2.png",
-      "resources/images/find_event_3.png",
-    ],
-  },
-  {
     projectTitle: "Live Chat App",
     thumbnail: "resources/images/chat_nest_react_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
@@ -42,6 +42,21 @@ const data = [
     images: [
       "resources/images/chat_nest_react_1.png",
       "resources/images/chat_nest_react_2.png",
+    ],
+  },
+  {
+    projectTitle: "Flair Airlines Homepage Rebuild",
+    thumbnail: "resources/images/flair_rebuild_thumbnail.png",
+    gitHubLink: "https://github.com/alxlvgit/flair-rebuild",
+    hostedLink: "https://flair-rebuild.netlify.app/",
+    projectType: ["js-frameworks"],
+    tech: "TypeScript, React, Swiper JS, Material-UI, Tailwind CSS",
+    description:
+      "A rebuild of the Flair Airlines homepage. The website features a responsive design and a modern look.",
+    images: [
+      "resources/images/flair_rebuild_1.png",
+      "resources/images/flair_rebuild_2.png",
+      "resources/images/flair_rebuild_3.png",
     ],
   },
   {
