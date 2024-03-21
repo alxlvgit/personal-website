@@ -7,18 +7,17 @@
 }
 
 html {
-    overflow-x: hidden;
     box-sizing: border-box;
-    overflow-y: scroll;
+
     scroll-behavior: smooth;
 }
 
 body {
+    overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -29,8 +28,14 @@ body {
 section {
     width: 80%;
     max-width: 75rem;
-    margin: auto;
-    padding: 8rem 0;
+    margin: 0 auto 9rem auto;
+    padding: 3rem 0;
+}
+
+.section-heading {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6.25rem;
 }
 
 a,
@@ -62,9 +67,19 @@ hr {
 
 /* Start header */
 
+.mobile-nav-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+}
+
 .header {
-    margin: 2rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     width: 80%;
+    height: 5rem;
     max-width: 75rem;
     display: flex;
     flex-direction: row;
@@ -72,14 +87,84 @@ hr {
     justify-content: flex-start;
 }
 
-.resume {
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.menu li a {
+    font-size: large;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu li a:hover {
     color: white;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    padding: 1rem 2.5rem;
-    border: 0.06rem solid #FFFFFF;
-    border-radius: 3.75rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -21px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #FFF;
+    color: #FAA916;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 2s infinite 2s;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
 }
 
 .github,
@@ -111,16 +196,27 @@ hr {
 
 
 
-/* Start About */
+/* Start Intro */
 
-#about {
-    padding-top: 5rem;
+#landing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0;
+    height: calc(100vh - 6rem);
+    width: 100%;
 }
 
 .intro {
-    width: 50%;
+    width: fit-content;
     overflow-wrap: normal;
-    display: inline-block;
+    display: flex;
+    margin-top: -6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro h1:first-child {
@@ -133,18 +229,53 @@ hr {
     color: #FAA916;
     font-size: 3rem;
     line-height: 3.3rem;
+    text-align: center;
     width: 100%;
 }
 
+.resume {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 0.8rem 2rem;
+    border: 0.06rem solid #FFFFFF;
+    border-radius: 3.75rem;
+    margin-top: 2rem;
+}
+
+/* End Intro */
+
+
+
+/* Start About */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
 .about-details {
-    max-width: 44rem;
-    margin-top: 1.25rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-details p {
     line-height: 1.8rem;
     font-weight: 400;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .intro hr {
@@ -153,7 +284,6 @@ hr {
 }
 
 .profile-image {
-    float: right;
     max-width: 25%;
     display: flex;
 }
@@ -200,12 +330,6 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.section-heading {
-    width: fit-content;
-    text-align: center;
-    padding-bottom: 6.25rem;
 }
 
 .section-heading hr {
@@ -580,7 +704,7 @@ textarea {
 .submit-btn {
     padding: 0.8rem 2rem;
     align-self: flex-start;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 footer {
@@ -607,15 +731,6 @@ footer p {
 
 
 @media only screen and (max-width: 1200px) {
-    section {
-        padding: 7rem 0;
-    }
-
-    .name-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .flex-row {
         width: 80%;
@@ -627,6 +742,12 @@ footer p {
 
     .submit-btn {
         align-self: center;
+    }
+
+    .name-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     input,
@@ -641,13 +762,8 @@ footer p {
 }
 
 @media only screen and (max-width: 992px) {
-    section {
-        padding: 6rem 0;
-    }
-
     .about-details {
-        width: 100%;
-        margin-top: 2.2rem;
+        max-width: 60%;
     }
 
     .button-coloured {
@@ -723,6 +839,13 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+    .header {
+        justify-content: end;
+    }
+
+    .header nav {
+        display: none;
+    }
 
     .github,
     .linkedin {
@@ -734,11 +857,18 @@ footer p {
         line-height: 2rem;
     }
 
-    .intro {
-        float: none;
+    section {
+        margin: 0 auto 7rem auto;
+        max-width: 100%;
         width: 100%;
-        text-align: center;
-        margin-bottom: 1.6rem;
+    }
+
+    #about {
+        margin-top: 5rem;
+    }
+
+    .about-details {
+        max-width: 85%;
     }
 
     .section-heading {
@@ -756,21 +886,10 @@ footer p {
         margin-top: 0.3rem;
     }
 
-    .section-heading hr {
-        width: 3rem;
-        height: 0.125rem;
-    }
-
-    .intro hr {
-        display: none;
-    }
-
-    p {
-        text-align: left;
-    }
-
-    .title-container {
-        flex-wrap: wrap;
+    .about-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
     }
 
     .profile-image {
@@ -786,17 +905,20 @@ footer p {
 
     .about-details {
         width: 100%;
-        margin: 0;
     }
 
     .about-details p {
+        width: 100%;
         font-size: 0.9rem;
     }
 
-    .projects {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 1rem;
+    .section-heading hr {
+        width: 3rem;
+        height: 0.125rem;
+    }
+
+    .intro hr {
+        display: none;
     }
 
     .tile-top {
@@ -811,10 +933,6 @@ footer p {
         padding: 0.9rem 1.8rem;
     }
 
-    .about-details>.button-coloured {
-        margin: 1rem auto 0 auto;
-    }
-
     .project-title-modal {
         font-size: 1.6rem;
     }
@@ -824,7 +942,9 @@ footer p {
     }
 
     .projects {
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 1.5rem;
+        width: 85%;
     }
 
     .project-description {
@@ -838,6 +958,11 @@ footer p {
     .project-tech {
         font-size: 0.8rem;
         width: 90%;
+    }
+
+    .tile-image {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .info-button {
@@ -866,7 +991,7 @@ footer p {
     }
 
     form {
-        width: 100%;
+        width: 85%;
     }
 
     footer {
@@ -876,5 +1001,78 @@ footer p {
     footer p {
         font-size: 0.7rem;
         padding: 0.5rem;
+    }
+
+    /* Mobile Navigation */
+
+    .mobile-nav-icon {
+        display: block;
+    }
+
+    .mobile-nav-icon.active {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 9999;
+    }
+
+    .mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1.5rem;
+        background-color: black;
+    }
+
+    .mobile-nav-close-icon {
+        cursor: pointer;
+        color: white;
+    }
+
+    .mobile-nav .linkedin,
+    .mobile-nav .github {
+        margin-left: 0;
+        margin: 0 1rem;
+    }
+
+    .socials-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav li {
+        width: fit-content;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 2rem;
+    }
+
+    .mobile-nav.active {
+        display: block;
     }
 }

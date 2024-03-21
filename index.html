@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -29,36 +29,83 @@
     <!-- HEADER -->
 
     <header class="header">
-        <a class="resume" href="resources/other/resume.pdf" target="_blank">Resume</a>
-        <a class="github" target="_blank" href="https://github.com/alxlvgit"></a>
-        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/oleksandrlevchuk/"></a>
+        <!-- Desktop Navigation -->
+        <nav class="nav">
+            <div class="menu">
+                <ul>
+                    <li><a id="about-nav" href="#about">About</a></li>
+                    <li><a id="projects-nav" href="#projects">Projects</a></li>
+                    <li><a id="contact-nav" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a class="github" target="_blank" href="https://github.com/alxlvgit"></a>
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/oleksandrlevchuk/"></a>
+            </div>
+        </nav>
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-icon">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="mobile-nav-header">
+                <div class="socials-mobile">
+                    <a class="github" target="_blank" href="https://github.com/alxlvgit"></a>
+                    <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/oleksandrlevchuk/"></a>
+                </div>
+                <div class="mobile-nav-close-icon">
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <a class=" scroll-down" href="#">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </header>
 
-    <!-- ABOUT -->
+    <!-- LANDING -->
 
-    <section id="about">
+    <section id="landing-section">
         <div class="intro">
             <h1>Hello, my name is</h1>
             <h1>Oleksandr.</h1>
             <hr>
             <h1>Full Stack Developer</h1>
+            <a class="resume" href="resources/other/resume.pdf" target="_blank">Resume</a>
         </div>
-        <div class="profile-image">
-            <img src="resources/images/profile-photo.png" alt="profile image">
-        </div>
-        <div class="about-details">
-            <p>
-                As a Full Stack Developer, I am passionate about using my skills and creating innovative solutions for
-                various projects. While my programming journey began later in life, I fully immersed myself in the
-                dynamic world of web development.
-            </p>
-            <p>
-                I am always eager for new challenges and seeking an opportunity to grow. What truly inspires me in this
-                industry is the chance to contribute to projects that have a meaningful impact on people's lives.
-            </p>
+    </section>
 
-            <button class="button-coloured contact-btn">Get in touch
-            </button>
+    <!-- ABOUT -->
+    <section id="about">
+
+        <div class="section-heading">
+            <h1>ABOUT ME</h1>
+            <hr>
+        </div>
+        <div class="about-container">
+            <div class="about-details">
+                <p>
+                    As a Full Stack Developer, I am passionate about using my skills and creating innovative solutions
+                    for various projects. While my programming journey began later in life, I fully immersed myself in
+                    the dynamic world of web development.
+                </p>
+                <p>
+                    I am always eager for new challenges and seeking an opportunity to grow. What truly inspires me in
+                    this industry is the chance to contribute to projects that have a meaningful impact on people's
+                    lives.
+                </p>
+                <button class="button-coloured contact-btn">Get in touch
+                </button>
+            </div>
+            <div class="profile-image">
+                <img src="resources/images/profile-photo.png" alt="profile image">
+            </div>
         </div>
     </section>
 

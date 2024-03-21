@@ -223,3 +223,49 @@ buttons.forEach(function (filterBtn) {
     addProjectsTiles(dataSetId);
   });
 });
+
+// Scroll down to the About section on button click
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollDownButton = document.querySelector(".scroll-down");
+  var projectsSection = document.getElementById("about");
+
+  scrollDownButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Function to close the mobile navigation menu
+function closeMobileNav() {
+  document.querySelector(".mobile-nav").classList.remove("active");
+  document.body.style.overflowY = "scroll";
+  document.querySelector(".mobile-nav-icon").classList.remove("active");
+}
+
+// Toggle the mobile navigation menu
+document
+  .querySelector(".mobile-nav-icon")
+  .addEventListener("click", function () {
+    document.querySelector(".mobile-nav").classList.toggle("active");
+    if (document.querySelector(".mobile-nav").classList.contains("active")) {
+      document.querySelector(".mobile-nav-icon").classList.add("active");
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.querySelector(".mobile-nav-icon").classList.remove("active");
+      document.body.style.overflowY = "scroll";
+    }
+  });
+
+// Close the mobile navigation menu when clicking on a link inside the menu
+document.querySelectorAll(".mobile-nav a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    closeMobileNav();
+  });
+});
+
+// Close the mobile navigation menu when clicking on the close icon
+document
+  .querySelector(".mobile-nav-close-icon")
+  .addEventListener("click", function () {
+    closeMobileNav();
+  });
