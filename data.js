@@ -20,7 +20,7 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/cocoon",
     hostedLink: "https://www.cocoon.quest/",
     projectType: ["js-frameworks"],
-    tech: "TypeScript, Next.js, Redux, AWS Lambda, Amazon Textract, LangChain, Tailwind CSS, OpenAI API, Udemy Affiliate API...",
+    tech: "TypeScript, Next.js, PostgreSQL, AWS Lambda, Redux, Amazon Textract, LangChain, Tailwind CSS, OpenAI API...",
     description:
       "Cocoon is an AI-driven app designed to help you switch careers seamlessly. Built using TypeScript, Next.js, PostgreSQL, AWS Lambda, Amazon Textract, Redux, LangChain, OpenAI API, Google Docs API, and the Udemy Affiliate API. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
     images: [
@@ -50,7 +50,7 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/flair-rebuild",
     hostedLink: "https://flair-rebuild.netlify.app/",
     projectType: ["js-frameworks"],
-    tech: "TypeScript, React, Material-UI, Swiper JS, and Tailwind CSS",
+    tech: "TypeScript, React, Material-UI, Swiper JS, Tailwind CSS",
     description:
       "A rebuild of the Flair Airlines homepage. Built using TypeScript, React, Material-UI, Swiper JS and Tailwind CSS. The website features a responsive design and a modern look.",
     images: [
