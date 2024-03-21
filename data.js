@@ -7,7 +7,7 @@ const data = [
     projectType: ["js-frameworks"],
     tech: "TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, Ticketmaster API",
     description:
-      "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations.  The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
+      "Find Event is a web application designed to assist users in discovering a wide range of events in specific locations. Built using TypeScript, Next.js, Redux, Mapbox GL JS, Tailwind CSS, and the Ticketmaster API. The application features a dynamic map that allows users to explore events within their selected area and access ticket information.",
     images: [
       "resources/images/find_event_1.png",
       "resources/images/find_event_2.png",
@@ -20,9 +20,9 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/cocoon",
     hostedLink: "https://www.cocoon.quest/",
     projectType: ["js-frameworks"],
-    tech: "TypeScript, Next.js, Tailwind CSS, Redux, AWS Lambda, Amazon Textract, LangChain, OpenAI API, Udemy Affiliate API...",
+    tech: "TypeScript, Next.js, Redux, AWS Lambda, Amazon Textract, LangChain, Tailwind CSS, OpenAI API, Udemy Affiliate API...",
     description:
-      "Cocoon is an AI-driven app designed to help you switch careers seamlessly. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
+      "Cocoon is an AI-driven app designed to help you switch careers seamlessly. Built using TypeScript, Next.js, PostgreSQL, AWS Lambda, Amazon Textract, Redux, LangChain, OpenAI API, Google Docs API, and the Udemy Affiliate API. It scans your resume to identify your skills and then uses open job data, Udemy courses, and college programs to create a tailored roadmap for your new career. By finding transferable skills and suggesting relevant courses, Cocoon makes it easier to fill skill gaps and prepare for a successful transition.",
     images: [
       "resources/images/cocoon_1.png",
       "resources/images/cocoon_2.png",
@@ -36,9 +36,9 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/chat-nest-react",
     hostedLink: "https://chat-nest-react.vercel.app/",
     projectType: ["node-frameworks", "js-frameworks"],
-    tech: "TypeScript, NestJS, React, Redux, RTK Query, Socket.IO, Formik, PostgreSQL, Tailwind CSS",
+    tech: "TypeScript, NestJS, PostgreSQL, React, Redux, RTK Query, Socket.IO, Formik, Tailwind CSS",
     description:
-      "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built by using React, NestJS, Redux, RTK Query, Socket.IO, Formik, Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
+      "A real-time chat application that allows users to join chat rooms and communicate with each other instantly. Built using TypeScript, NestJS, PostgreSQL, React, Redux, RTK Query, Socket.IO, Formik, and Tailwind CSS. Features include user authentication with JWT, real-time chat, chat rooms, and real-time updates on new room members.",
     images: [
       "resources/images/chat_nest_react_1.png",
       "resources/images/chat_nest_react_2.png",
@@ -50,9 +50,9 @@ const data = [
     gitHubLink: "https://github.com/alxlvgit/flair-rebuild",
     hostedLink: "https://flair-rebuild.netlify.app/",
     projectType: ["js-frameworks"],
-    tech: "TypeScript, React, Swiper JS, Material-UI, Tailwind CSS",
+    tech: "TypeScript, React, Material-UI, Swiper JS, and Tailwind CSS",
     description:
-      "A rebuild of the Flair Airlines homepage. The website features a responsive design and a modern look.",
+      "A rebuild of the Flair Airlines homepage. Built using TypeScript, React, Material-UI, Swiper JS and Tailwind CSS. The website features a responsive design and a modern look.",
     images: [
       "resources/images/flair_rebuild_1.png",
       "resources/images/flair_rebuild_2.png",
@@ -67,7 +67,7 @@ const data = [
     projectType: ["js", "node-frameworks"],
     tech: "JavaScript, Node.js, Express, Socket.IO, Redis, AWS S3, MySQL, Passport.js, HTML, Tailwind CSS, EJS",
     description:
-      "TravelMeet is a dynamic full-stack web application that connects users in specific locations. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
+      "TravelMeet is a dynamic full-stack web application that connects users in specific locations. Built using JavaScript, Node.js, Express, MySQL, Passport.js, Socket.IO, AWS S3, Redis, HTML, and Tailwind CSS. It features a real-time map where registered users can share their location information and create groups to visit events together. Users can view profiles and follow others to gain meaningful connections and enhance travel experiences.",
     images: [
       "resources/images/travelmeet_1.png",
       "resources/images/travelmeet_2.png",
