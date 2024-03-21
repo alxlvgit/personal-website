@@ -513,27 +513,32 @@ hr {
     align-items: center;
 }
 
-input {
-    width: 100%;
-    border: none;
-    margin: 0;
-    border-radius: 1rem;
-    padding: 0.8rem 1rem;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-input[type="email"] {
-    width: 100%;
-}
-
 form {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+}
+
+.input-style {
+    display: flex;
+    width: 48%;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+input {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0.04rem white;
 }
 
 .name-container {
@@ -543,36 +548,28 @@ form {
     flex-wrap: wrap;
 }
 
-.input-style {
-    width: 40%;
-    padding: 0.125rem;
-    text-align: center;
-    border-radius: 1rem;
-    margin-bottom: 2.5rem;
-    display: flex;
-    background: linear-gradient(90deg, #000000 0%, #FFFFFF 52.6%, #000000 100%);
-}
-
-form>.input-style:last-of-type {
-    width: 100%;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #000000 0%, #FFFFFF 0.01%, #000000 51.04%, #FFFFFF 100%);
-}
-
 form>.input-style:nth-child(2) {
-    width: 60%;
+    width: 100%;
 }
 
 ::placeholder {
     text-align: center;
 }
 
+.textarea-style {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+}
+
 textarea {
     padding: 1rem;
+    width: 100%;
     max-width: 100%;
     margin: auto;
     border-radius: 1rem;
     border: none;
+    box-shadow: 0 0 0 0.04rem white;
     color: white;
     font-family: inherit;
     min-height: 12.5rem;
@@ -624,14 +621,8 @@ footer p {
         width: 80%;
     }
 
-    .input-style,
-    form>.input-style:nth-child(2) {
-        background: white;
+    .input-style {
         width: 60%;
-    }
-
-    form>.input-style:last-of-type {
-        background: white;
     }
 
     .submit-btn {
@@ -642,6 +633,10 @@ footer p {
     textarea,
     ::placeholder {
         text-align: left;
+    }
+
+    .input-style {
+        width: 100%;
     }
 }
 

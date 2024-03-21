@@ -60,17 +60,6 @@ const data = [
     ],
   },
   {
-    projectTitle: "Personal Website",
-    thumbnail: "resources/images/personal_portfolio_thumbnail.png",
-    gitHubLink: "https://github.com/alxlvgit/PersonalWebsite",
-    hostedLink: "https://levchuk.dev/",
-    projectType: ["js"],
-    tech: "HTML, CSS, JavaScript",
-    description:
-      "Personal Website is a website that showcases my projects and skills. The website is built using HTML, CSS, and JavaScript.",
-    images: ["resources/images/personal_website.png"],
-  },
-  {
     projectTitle: "TravelMeet",
     thumbnail: "resources/images/travelmeet_thumbnail.png",
     gitHubLink: "https://github.com/alxlvgit/TravelMeet",
