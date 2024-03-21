@@ -235,6 +235,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Scroll up to the Header section on button click
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollUpButton = document.querySelector(".scroll-up");
+  var headerSection = document.querySelector("header");
+  scrollUpButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    headerSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 // Function to close the mobile navigation menu
 function closeMobileNav() {
   document.querySelector(".mobile-nav").classList.remove("active");
