@@ -311,7 +311,6 @@ header nav {
 
 .button-coloured:hover,
 .filter-button:hover,
-.info-button:hover,
 .project-link:hover {
     color: black;
     background-color: white;
@@ -978,6 +977,15 @@ footer p {
         background-color: transparent;
         color: transparent;
         z-index: -1;
+    }
+
+    .overlay:hover {
+        background-color: transparent;
+        opacity: 0;
+    }
+
+    .info-button:hover {
+        background-color: transparent;
     }
 
     .title {
