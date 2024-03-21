@@ -672,8 +672,9 @@ input {
     flex-wrap: wrap;
 }
 
-form>.input-style:nth-child(2) {
+.email-container {
     width: 100%;
+    margin-bottom: 2.5rem;
 }
 
 ::placeholder {
