@@ -34,7 +34,7 @@ section {
 .section-heading {
     width: 100%;
     text-align: center;
-    padding-bottom: 6.25rem;
+    padding-bottom: 6rem;
 }
 
 a,
@@ -246,7 +246,7 @@ nav {
 #about {
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 
 .about-container {
@@ -860,7 +860,7 @@ footer p {
 
     .section-heading {
         margin: 0;
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
     }
 
     .section-heading h1 {
@@ -897,6 +897,7 @@ footer p {
     .about-details p {
         width: 100%;
         font-size: 0.9rem;
+        text-align: center;
     }
 
     .section-heading hr {
@@ -918,6 +919,7 @@ footer p {
 
     .button-coloured {
         padding: 0.9rem 1.8rem;
+        align-self: center;
     }
 
     .project-title-modal {
